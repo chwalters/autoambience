@@ -1,0 +1,446 @@
+{
+  "Grey Noise": {
+    "type": "Synthetic",
+    "channels": [
+      "Sub-bass",
+      "Low Bass",
+      "Bass",
+      "High Bass",
+      "Low Mids",
+      "Mids",
+      "High Mids",
+      "Low Treble",
+      "Treble",
+      "High Treble"
+    ],
+    "keywords": [
+      "light"
+    ],
+    "Impulse Noise": {
+      "type": "Synthetic",
+      "channels": [],
+      "keywords": []
+    },
+    "Sweep Noise": {
+      "type": "Synthetic",
+      "channels": [],
+      "keywords": []
+    },
+    "Synthesized Noises": {
+      "type": "Synthetic",
+      "channels": [],
+      "keywords": []
+    },
+    "White Noise & Co": {
+      "type": "Synthetic",
+      "channels": [],
+      "keywords": []
+    },
+    "Aircraft Cabin Noise": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Data Center": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Demolition Site": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Fan Noise": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Fireworks": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Fish Tank": {
+      "type": "Industrial",
+      "channels": [
+        "Air Pump",
+        "Air Pump",
+        "Water Flow",
+        "Bubbles",
+        "Bubbles",
+        "Water Pump",
+        "Water",
+        "Water",
+        "Water",
+        "Splashes"
+      ],
+      "keywords": ["fish", "fish tank", "water pump", "pump"]
+    },
+    "Formula Race": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Hum Noise": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Laundromat": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Railroads": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Traffic Noise": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Vinyl Noise": {
+      "type": "Industrial",
+      "channels": [],
+      "keywords": []
+    },
+    "Absolute Rain": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Cat Purr": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Cave Water": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Coastline": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Crystal Stream": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Dark Water": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Desert Wind": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Distant Thunder": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Fire Noise": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Jungle Life": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Ocean Waves": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Rain on a Tent": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Summer Night": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Tropical Birds": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Water Stream": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Waterfall Noise": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "White Rain": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Wind Noise": {
+      "type": "Natural",
+      "channels": [],
+      "keywords": []
+    },
+    "Church": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Fairy Pond": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Farm": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Ferryboat": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Flying Fortress": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": ["Airplane"]
+    },
+    "Grazeland": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Healing Water": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "In Utero": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Nocturnal Garden": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Palm Garden": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Paraglide": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Prehistory": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "RPG Battlefield": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "RPG Dungeon": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "RPG Poltergeist": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Rainy Riverbank": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Sailboat": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Spaceship": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Spring Walk": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Subaquatic Dreams": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Tibetan Spirit": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Underwater": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Winder Walk": {
+      "type": "Atmospheres",
+      "channels": [],
+      "keywords": []
+    },
+    "Anamnesis": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Bagpipes": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Canyon": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Didgeridrone": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Ethereal Choir": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Ice World": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Indian Drone": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Northern Lights": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Orchestron": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Shruti Box": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Singing Bowls": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Stardust": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Tanpura": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "Tibetan Choir": {
+      "type": "Tonal",
+      "channels": [],
+      "keywords": []
+    },
+    "A Trip of Mind": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Circular Breeze": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Deserted": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Mr. Rhodes": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Oblivion": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Osmosis": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Perception Cloud": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Saturn Rings": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Temple Bells": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Three Friends of Winter": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Twilight": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    },
+    "Wooden Chimes": {
+      "type": "Soundscapes",
+      "channels": [],
+      "keywords": []
+    }
+  }
+}
