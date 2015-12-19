@@ -19,6 +19,10 @@ class KeywordIdentifier_Test(unittest.TestCase):
 
     def test_identify(self):
         ki = KeywordIdentifier()
+        result = ki.identify('We were in an airplane')
+        self.assertTrue(len(result) > 0)
+        self.assertTrue('Flying Fortress' in result)
+
         ki.soundscapes = {"Test": {"keywords": ["a", "test"]}}
         result = ki.identify("This is a test")
         self.assertTrue('Test' in result)

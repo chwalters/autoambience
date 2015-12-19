@@ -75,7 +75,7 @@
         "Water",
         "Splashes"
       ],
-      "keywords": ["fish", "fish tank", "water pump", "pump"]
+      "keywords": ["fish", "tank", "water","pump"]
     },
     "Formula Race": {
       "type": "Industrial",
@@ -220,7 +220,7 @@
     "Flying Fortress": {
       "type": "Atmospheres",
       "channels": [],
-      "keywords": ["Airplane"]
+      "keywords": ["airplane", "plane"]
     },
     "Grazeland": {
       "type": "Atmospheres",

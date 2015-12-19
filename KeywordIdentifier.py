@@ -6,10 +6,12 @@ class KeywordIdentifier:
             self.soundscapes = json.load(sounds)
 
     def identify(self, text_block):
+        '''Looks through each soundscape to find keyword matches'''
         words = self.prepare_text_block(text_block)
-        return [s for s in self.soundscapes if self.match(text_block, self.soundscapes[s]['keywords'])]
+        return [s for s in self.soundscapes if self.match(words, self.soundscapes[s]['keywords'])]
 
     def match(self, check, check_against):
+        '''Helper method; intersects two lists'''
         return list(filter(lambda x: x in check_against, check))
 
     def remove_punctuation(self, text_block):
