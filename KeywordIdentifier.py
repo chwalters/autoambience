@@ -5,7 +5,12 @@ class KeywordIdentifier:
         with open('soundscapes.json','r') as sounds:
             self.soundscapes = json.load(sounds)
 
-    def identify(self, text_block):
+    def process(self, text_block):
+        '''Main feature; takes a block of text, then generates supergen'''
+        generators = self.identify_generators(text_block)
+        return self.generate_supergen_link(generators)
+
+    def identify_generators(self, text_block):
         '''Looks through each soundscape to find keyword matches'''
         words = self.prepare_text_block(text_block)
         return [s for s in self.soundscapes if self.match(words, self.soundscapes[s]['keywords'])]
