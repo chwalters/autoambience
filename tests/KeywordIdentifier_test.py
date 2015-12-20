@@ -26,3 +26,19 @@ class KeywordIdentifier_Test(unittest.TestCase):
         ki.soundscapes = {"Test": {"keywords": ["a", "test"]}}
         result = ki.identify("This is a test")
         self.assertTrue('Test' in result)
+
+    def test_generate_regular_link(self):
+        ki = KeywordIdentifier()
+        flying_fortress = ki.identify('airplane')
+        result = ki.generate_regular_link(flying_fortress)
+        self.assertEqual(result, "http://mynoise.net/NoiseMachines/propellerNoiseGenerator.php")
+
+        irish_coast = ki.identify('coast')
+        result = ki.generate_regular_link(irish_coast)
+        self.assertEqual(result, "http://mynoise.net/NoiseMachines/windSeaRainNoiseGenerator.php")
+
+    def test_generate_supergen_link(self):
+        ki = KeywordIdentifier()
+        flying_fortress = ki.identify('It was a dark and stormy night at sea. Drifting endlessly on the coast, I had only my cat to keep me company.')
+        result = ki.generate_supergen_link(flying_fortress)
+        self.assertEqual(result, 'mynoise.net/superGenerator.php?g1=windSeaRainNoiseGenerator.php&g2=catPurrNoiseGenerator.php')

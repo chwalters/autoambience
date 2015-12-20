@@ -25,3 +25,16 @@ class KeywordIdentifier:
         '''Splits, removes punctuation, and lower-izes text'''
         without_punc = self.remove_punctuation(text_block).lower()
         return without_punc.split(" ")
+
+    def generate_regular_link(self, soundscapes):
+        link = self.soundscapes[soundscapes[0]]['url']
+        return 'http://mynoise.net/NoiseMachines/' + link + '.php'
+
+    def generate_supergen_link(self, soundscapes):
+        '''Combines many sounds into one!'''
+        supergen_link = 'mynoise.net/superGenerator.php?'
+        number_of_soundscapes = min(len(soundscapes), 5)
+        for sound_num in range(number_of_soundscapes):
+            url = self.soundscapes[soundscapes[sound_num]]['url']
+            supergen_link += 'g{0}={1}.php&'.format(sound_num+1, url)
+        return supergen_link[:-1]
