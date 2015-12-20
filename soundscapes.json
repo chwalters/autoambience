@@ -92,43 +92,43 @@
       "type": "Industrial",
       "url": "raceCarsNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["race", "racecar", "formula", "nascar"]
     },
     "Hum Noise": {
       "type": "Industrial",
       "url": "60HzHumNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["electric", "electricity", "hum", "humming"]
     },
     "Laundromat": {
       "type": "Industrial",
       "url": "laundromatNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["laundry", "laundromat", "washer", "dryer", "clothes"]
     },
     "Railroads": {
       "type": "Industrial",
       "url": "railroadNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["train", "railroad"]
     },
     "Traffic Noise": {
       "type": "Industrial",
       "url": "trafficNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["traffic", "cars", "street", "road", "trucks", "vehicles"]
     },
     "Vinyl Noise": {
       "type": "Industrial",
       "url": "dustyScratchVinylNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["record", "vinyl"]
     },
     "Absolute Rain": {
       "type": "Natural",
       "url": "rainNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["rain"]
     },
     "Cat Purr": {
       "type": "Natural",
@@ -140,43 +140,43 @@
       "type": "Natural",
       "url": "caveWaterNoiseGenerator",
       "channels": [],
-      "keywords": ["cave", "stalagmite", "stalactite"]
+      "keywords": ["cave", "stalagmite", "stalactite", "dripping"]
     },
     "Coastline": {
       "type": "Natural",
       "url": "windSeaRainNoiseGenerator",
       "channels": [],
-      "keywords": ["coast", "beach", "sea", "ocean"]
+      "keywords": ["coast", "beach", "sea", "ocean", "waves", "tide"]
     },
     "Crystal Stream": {
       "type": "Natural",
       "url": "waterSpringStreamNoiseGenerator",
       "channels": [],
-      "keywords": ["crystal", "spring"]
+      "keywords": ["crystal", "spring", "stream"]
     },
     "Dark Water": {
       "type": "Natural",
       "url": "caveExplorationNoiseGenerator",
       "channels": [],
-      "keywords": ["cave", "water"]
+      "keywords": ["cave", "water", "dripping", "drip"]
     },
     "Desert Wind": {
       "type": "Natural",
       "url": "saharaWindNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["desert", "dry", "heatwave"]
     },
     "Distant Thunder": {
       "type": "Natural",
       "url": "thunderNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["thunder", "storm", "stormy", "lightning"]
     },
     "Fire Noise": {
       "type": "Natural",
       "url": "fireNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["fire", "campfire", "fireplace", "burning"]
     },
     "Jungle Life": {
       "type": "Natural",
@@ -188,31 +188,31 @@
       "type": "Natural",
       "url": "oceanNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["ocean", "waves"]
     },
     "Rain on a Tent": {
       "type": "Natural",
       "url": "campingRainNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["rain", "camping", "camp", "tent"]
     },
     "Summer Night": {
       "type": "Natural",
       "url": "ultrasonicNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["summer", "insects", "crickets", "night"]
     },
     "Tropical Birds": {
       "type": "Natural",
       "url": "tropicalForestAtDawnSoundscapeGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["birds"]
     },
     "Tropical Rain": {
       "type": "Natural",
       "url": "tinRoofrainNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["roof", "rain"]
     },
     "Water Stream": {
       "type": "Natural",
@@ -236,19 +236,19 @@
       "type": "Natural",
       "url": "windNoiseGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["wind"]
     },
     "Church": {
       "type": "Atmospheres",
       "url": "churchAtmosphereSoundGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["church", "priest", "bells", "pastor", "congregation", "mass"]
     },
     "Fairy Pond": {
       "type": "Atmospheres",
       "url": "froggyPondSoundscapeGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["pond", "frog", "frogs", "toad", "toads"]
     },
     "Farm": {
       "type": "Atmospheres",
@@ -272,7 +272,7 @@
       "type": "Atmospheres",
       "url": "grasslandSoundscapeGenerator",
       "channels": [],
-      "keywords": []
+      "keywords": ["grass", "wheat"]
     },
     "Healing Water": {
       "type": "Atmospheres",

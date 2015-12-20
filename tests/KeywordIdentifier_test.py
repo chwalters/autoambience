@@ -1,4 +1,4 @@
-from KeywordIdentifier import KeywordIdentifier
+from autoambience.KeywordIdentifier import KeywordIdentifier
 import unittest
 
 class KeywordIdentifier_Test(unittest.TestCase):
@@ -41,7 +41,7 @@ class KeywordIdentifier_Test(unittest.TestCase):
         ki = KeywordIdentifier()
         flying_fortress = ki.identify_generators('It was a dark and stormy night at sea. Drifting endlessly on the coast, I had only my cat to keep me company.')
         result = ki.generate_supergen_link(flying_fortress)
-        self.assertEqual(result, 'mynoise.net/superGenerator.php?g1=windSeaRainNoiseGenerator.php&g2=catPurrNoiseGenerator.php')
+        self.assertEqual(result, 'mynoise.net/superGenerator.php?g1=windSeaRainNoiseGenerator.php&g2=ultrasonicNoiseGenerator.php&g3=catPurrNoiseGenerator.php&g4=thunderNoiseGenerator.php')
 
     def test_process(self):
         ki = KeywordIdentifier()
