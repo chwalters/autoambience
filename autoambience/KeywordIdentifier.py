@@ -1,12 +1,10 @@
 import json
 
-
 class KeywordIdentifier:
     def __init__(self):
         with open('soundscapes.json','r') as sounds:
             self.soundscapes = json.load(sounds)
 
-    @app.route('/process')
     def process(self, text_block):
         '''Main feature; takes a block of text, then generates supergen'''
         generators = self.identify_generators(text_block)
