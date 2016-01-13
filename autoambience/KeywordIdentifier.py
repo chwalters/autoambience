@@ -2,6 +2,8 @@ import json, random
 
 class KeywordIdentifier:
     def __init__(self):
+        self.supergen_channel_prefix = '%3Fc%3D3%26l%3D'
+        self.regular_channel_prefix = '?c=0&l='
         with open('soundscapes.json','r') as sounds:
             self.soundscapes = json.load(sounds)
 
@@ -35,7 +37,7 @@ class KeywordIdentifier:
         soundscape_url = self.soundscapes[soundscapes[0]]['url']
         regular_link = 'http://mynoise.net/NoiseMachines/' + soundscape_url + '.php'
         if amplitudes is not None:
-            channel_link = self.generate_channels(amplitudes)
+            channel_link = self.generate_channels(self.regular_channel_prefix, amplitudes)
             return regular_link + channel_link
         return regular_link
 
@@ -44,13 +46,13 @@ class KeywordIdentifier:
         supergen_link = 'mynoise.net/superGenerator.php?'
         number_of_soundscapes = min(len(soundscapes), 5)
         for sound_num in range(number_of_soundscapes):
-            url = self.soundscapes[soundscapes[sound_num]]['url']
-            supergen_link += 'g{0}={1}.php&'.format(sound_num+1, url)
+            generator_url = self.soundscapes[soundscapes[sound_num]]['url']
+            channel_text = '' # TBD
+            supergen_link += 'g{0}={1}.php{2}&'.format(sound_num+1, generator_url, channel_text)
         return supergen_link[:-1]
 
-    def generate_channels(self, amplitudes):
-        '''Use a 10-dimensional vector to generate specific channel structure'''
-        channel_prefix = '?c=0&l='
+    def generate_channels(self, channel_prefix, amplitudes):
+        '''Uses a 10-Dim vector to specify per-channel amplitudes'''
         channel_text = ''.join('{0:02d}'.format(x) for x in amplitudes)
         return channel_prefix + channel_text
 

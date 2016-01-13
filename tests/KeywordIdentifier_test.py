@@ -59,5 +59,5 @@ class KeywordIdentifier_Test(unittest.TestCase):
     def test_channel_generation(self):
         ki = KeywordIdentifier()
         amplitudes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        result = ki.generate_channels(amplitudes)
-        self.assertEqual(result, '?c=0&l=00010203040506070809')
+        result = ki.generate_channels('something', amplitudes)
+        self.assertEqual(result, 'something00010203040506070809')
