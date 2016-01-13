@@ -37,6 +37,14 @@ class KeywordIdentifier_Test(unittest.TestCase):
         result = ki.generate_regular_link(irish_coast)
         self.assertEqual(result, "http://mynoise.net/NoiseMachines/windSeaRainNoiseGenerator.php")
 
+    def test_generate_regular_link_with_channels(self):
+        ki = KeywordIdentifier()
+
+        amplitudes = [5, 5, 0, 0, 1, 1, 9, 9, 4, 4]
+        irish_coast = ki.identify_generators('coast')
+        result = ki.generate_regular_link(irish_coast, amplitudes)
+        self.assertEqual(result, "http://mynoise.net/NoiseMachines/windSeaRainNoiseGenerator.php?c=0&l=05050000010109090404")
+
     def test_generate_supergen_link(self):
         ki = KeywordIdentifier()
         flying_fortress = ki.identify_generators('It was a dark and stormy night at sea. Drifting endlessly on the coast, I had only my cat to keep me company.')
@@ -50,5 +58,6 @@ class KeywordIdentifier_Test(unittest.TestCase):
 
     def test_channel_generation(self):
         ki = KeywordIdentifier()
-        result = ki.generate_channels([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        amplitudes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        result = ki.generate_channels(amplitudes)
         self.assertEqual(result, '?c=0&l=00010203040506070809')

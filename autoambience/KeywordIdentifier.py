@@ -35,7 +35,7 @@ class KeywordIdentifier:
         soundscape_url = self.soundscapes[soundscapes[0]]['url']
         regular_link = 'http://mynoise.net/NoiseMachines/' + soundscape_url + '.php'
         if amplitudes is not None:
-            channel_link = self.generate_channels(randomized_amplitudes)
+            channel_link = self.generate_channels(amplitudes)
             return regular_link + channel_link
         return regular_link
 
