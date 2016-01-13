@@ -43,3 +43,9 @@ class KeywordIdentifier:
             url = self.soundscapes[soundscapes[sound_num]]['url']
             supergen_link += 'g{0}={1}.php&'.format(sound_num+1, url)
         return supergen_link[:-1]
+
+    def generate_channels(self, amplitudes):
+        '''Use a 10-dimensional vector to generate specific channel structure'''
+        channel_prefix = '?c=0&l='
+        channel_text = ''.join('{0:02d}'.format(x) for x in amplitudes)
+        return channel_prefix + channel_text

@@ -47,3 +47,8 @@ class KeywordIdentifier_Test(unittest.TestCase):
         ki = KeywordIdentifier()
         result = ki.process("This is some text about a guy and his cat and his fish")
         self.assertEqual(result, 'mynoise.net/superGenerator.php?g1=60HzFishTankNoiseGenerator.php&g2=catPurrNoiseGenerator.php')
+
+    def test_channel_generation(self):
+        ki = KeywordIdentifier()
+        result = ki.generate_channels([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        self.assertEqual(result, '?c=0&l=00010203040506070809')
