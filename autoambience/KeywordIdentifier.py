@@ -1,4 +1,4 @@
-import json
+import json, random
 
 class KeywordIdentifier:
     def __init__(self):
@@ -31,9 +31,13 @@ class KeywordIdentifier:
         without_punc = self.remove_punctuation(text_block).lower()
         return without_punc.split(" ")
 
-    def generate_regular_link(self, soundscapes):
-        link = self.soundscapes[soundscapes[0]]['url']
-        return 'http://mynoise.net/NoiseMachines/' + link + '.php'
+    def generate_regular_link(self, soundscapes, amplitudes=None):
+        soundscape_url = self.soundscapes[soundscapes[0]]['url']
+        regular_link = 'http://mynoise.net/NoiseMachines/' + soundscape_url + '.php'
+        if amplitudes is not None:
+            channel_link = self.generate_channels(randomized_amplitudes)
+            return regular_link + channel_link
+        return regular_link
 
     def generate_supergen_link(self, soundscapes):
         '''Combines many sounds into one!'''
@@ -49,3 +53,10 @@ class KeywordIdentifier:
         channel_prefix = '?c=0&l='
         channel_text = ''.join('{0:02d}'.format(x) for x in amplitudes)
         return channel_prefix + channel_text
+
+    def random(self):
+        '''Used for training'''
+        rand_gen_number = random.randint(0, len(self.soundscapes))
+        rand_gen_id  = [gen for gen in self.soundscapes][rand_gen_number]
+        randomized_amplitudes = [random.randint(0, 99) for x in range(10)]
+        return self.generate_regular_link([rand_gen_id], randomized_amplitudes)
