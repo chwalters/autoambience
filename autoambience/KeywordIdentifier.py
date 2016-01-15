@@ -1,9 +1,14 @@
 import json, random
 
 class KeywordIdentifier:
+    regular_channel_prefix = '?c=0&l='
+    supergen_channel_prefix = '%3Fc%3D3%26l%3D'
+    regular_url = 'http://mynoise.net/NoiseMachines/{0}.php'
+    supergen_url = 'mynoise.net/superGenerator.php?'
+    supergen_joiner = 'g{0}={1}.php{2}&'
+
     def __init__(self):
-        self.supergen_channel_prefix = '%3Fc%3D3%26l%3D'
-        self.regular_channel_prefix = '?c=0&l='
+        self.punctuation = ["\"", "'", ",", ".", "!", "?", ";", ":", "/"]
         with open('soundscapes.json','r') as sounds:
             self.soundscapes = json.load(sounds)
 
@@ -24,7 +29,7 @@ class KeywordIdentifier:
     def remove_punctuation(self, text_block):
         '''Removes all punctuation from a string'''
         new_block = text_block
-        for punc in ["\"", "'", ",", ".", "!", "?", ";", ":", "/"]:
+        for punc in self.punctuation:
             new_block = new_block.replace(punc,"")
         return new_block
 
@@ -35,7 +40,7 @@ class KeywordIdentifier:
 
     def generate_regular_link(self, soundscapes, amplitudes=None):
         soundscape_url = self.soundscapes[soundscapes[0]]['url']
-        regular_link = 'http://mynoise.net/NoiseMachines/' + soundscape_url + '.php'
+        regular_link =  KeywordIdentifier.regular_url.format(soundscape_url)
         if amplitudes is not None:
             channel_link = self.generate_channels(self.regular_channel_prefix, amplitudes)
             return regular_link + channel_link
@@ -43,13 +48,14 @@ class KeywordIdentifier:
 
     def generate_supergen_link(self, soundscapes):
         '''Combines many sounds into one!'''
-        supergen_link = 'mynoise.net/superGenerator.php?'
+        supergen_link = ''
         number_of_soundscapes = min(len(soundscapes), 5)
         for sound_num in range(number_of_soundscapes):
             generator_url = self.soundscapes[soundscapes[sound_num]]['url']
             channel_text = '' # TBD
-            supergen_link += 'g{0}={1}.php{2}&'.format(sound_num+1, generator_url, channel_text)
-        return supergen_link[:-1]
+            supergen_link += KeywordIdentifier.supergen_joiner.format(sound_num+1, generator_url, channel_text)
+        full_url = KeywordIdentifier.supergen_url + supergen_link[:-1]
+        return full_url
 
     def generate_channels(self, channel_prefix, amplitudes):
         '''Uses a 10-Dim vector to specify per-channel amplitudes'''
